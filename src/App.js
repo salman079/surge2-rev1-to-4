@@ -2,10 +2,12 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './style.css';
+import {Message} from './calculator.js';
 
 
 function App() {
   let [cal, setCal]= useState(0)
+  // let [calcu, setCalcu]= useState(0)
   let [mood, setMood] = useState(true)
   return (
     <div className="App">
@@ -26,11 +28,9 @@ function App() {
           <tr><th colspan="2"><button onClick={()=>setMood(!mood)}> Switching Mood   </button> <br /></th></tr>
         </table>
         <hr />
-        <table>
-
-        </table>
       </center>
-
+      <Message valued={cal} />
+     
     </div>
   );
 }

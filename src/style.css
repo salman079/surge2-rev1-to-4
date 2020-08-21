@@ -20,3 +20,8 @@ tr ,td, th {
 .alignment {
     text-align: right;
 }
+
+.format {
+    color: salmon;
+    font-size: xxx-large;
+}
