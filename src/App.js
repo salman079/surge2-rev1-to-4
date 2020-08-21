@@ -14,14 +14,23 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p> testing </p>     
       </header>
-      <body className={`bgcol-good ${mood ? '' : 'bgcol-bad'}`}>
-        <h1>Counter Result {cal}</h1>
-        <button onClick={()=>alert('testing alert')}> Alert !!!   </button> <br />
-        <button onClick={()=>setCal(cal+1)}> Addition   </button> 
-        <button onClick={()=>setCal(cal-1)}> Subtraction   </button> <br />
-        <h1>Current Mood {mood ? 'Good' : 'Bad'}</h1><br />
-        <button onClick={()=>setMood(!mood)}> Switching Mood   </button> <br />
-      </body>
+      <center>
+        <table className={`bgcol-good ${mood ? '' : 'bgcol-bad'}`}>
+          <tr><th colspan="2"><h1>Counter Result {cal}</h1></th></tr>
+          <tr><th colspan="2"><button onClick={()=>alert('testing alert')}> Alert !!!   </button></th></tr>
+          <tr>
+            <th className="alignment"><button onClick={()=>setCal(cal+1)}> Addition   </button></th>
+            <td ><button onClick={()=>setCal(cal-1)}> Subtraction   </button></td>
+          </tr>
+          <tr><th colspan="2"><h1>Current Mood {mood ? 'Good' : 'Bad'}</h1></th></tr>
+          <tr><th colspan="2"><button onClick={()=>setMood(!mood)}> Switching Mood   </button> <br /></th></tr>
+        </table>
+        <hr />
+        <table>
+
+        </table>
+      </center>
+
     </div>
   );
 }

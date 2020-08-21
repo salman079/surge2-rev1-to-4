@@ -5,3 +5,18 @@
 .bgcol-bad {
     background-color: rgb(218, 0, 84);
 }
+table {
+    border-collapse: collapse; 
+    /* border-spacing: .2em; */
+    width: 50em;
+    /* padding: .2em; */
+    /* text-align: center; */
+}
+tr ,td, th {
+    border: 2px solid black;
+    width: 20%;
+    
+}
+.alignment {
+    text-align: right;
+}
