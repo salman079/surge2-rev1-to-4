@@ -43,4 +43,3 @@ jobs:
     
     - name: deploying to surge
       run: surge ./build http://saloo-2nd.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
-     
